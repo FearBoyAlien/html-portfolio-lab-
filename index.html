@@ -1,13 +1,122 @@
 <html>
-    <head>
-        <title>
-            Portfolio
-        </title>
-    </head>
-    <body>
-        <header>
-        <h1>Unreal</h1>
-        <p>I am a young student passionate about pursuing a career in acting. I often feel like I am able to express emotions more fluidly on stage. My everyday self might feel unreal but my approach to acting is very real and human.</p>
-        </header>
-    </body>
+<head>
+    <title>Personal Portfolio & Media Showcase</title>
+</head>
+<body>
+
+    <header>
+        <h1>Aryan Neupane</h1>
+        <p><em>Aspiring & Passionate Actor </em></p>
+    </header>
+
+    <main>
+        <!-- 1. Text Formatting & Structure -->
+        <section id="about">
+            <h2>About Me & Heading Demonstrations</h2>
+            
+            <p>Welcome to my portfolio. This document introduces me as an actor and displays my capabilities.</p>
+            
+            <h3>Education & Background</h3>
+            <p>I am currently pursuing an <strong>Acting Workshop</strong>. I know that I am not that e but every step I take is a part of the journey ahead.</p>
+
+            <h4>Technical Skills & Expertise</h4>
+            <p>Through rookie acts, I have gained <b>practical experience</b> in full-stack web development, software engineering principles, and multimedia asset creation. I believe in writing <em>clean, semantic, and accessible code</em>.</p>
+
+            <h5>Hobbies & Personal Interests</h5>
+            <p>Beyond coding, I enjoy digital photography, composing audio soundscapes, and contributing to open-source software communities during my free time.</p>
+
+            <h6>Future Career Goals</h6>
+            <p>My ultimate goal is to pioneer <mark>innovative web applications</mark> that bridge the gap between complex software engineering and seamless user experience design.</p>
+
+            <h3>Comprehensive Text Formatting Showcase</h3>
+            <div class="demo-box">
+                <p>This paragraph demonstrates a complete range of HTML inline formatting elements:</p>
+                <ul>
+                    <li><strong>Strong Importance:</strong> <strong>Software engineering requires continuous learning.</strong></li>
+                    <li><em>Emphasized Text:</em> <em>Design is not just what it looks like, but how it works.</em></li>
+                    <li><b>Bold Text (Visual):</b> <b>Key Concept:</b> Semantic structure matters for SEO and accessibility.</li>
+                    <li><i>Italic Text (Idiomatic):</i> I read <i>The Pragmatic Programmer</i> to sharpen my skills.</li>
+                    <li><mark>Marked / Highlighted:</mark> Remember to <mark>review code quality standards</mark> before deployment.</li>
+                    <li><small>Small Text:</small> <small>* Terms and references subject to continuous updates.</small></li>
+                    <li><ins>Inserted Text:</ins> Web standards are <ins>constantly evolving</ins> to serve users better.</li>
+                    <li><del>Deleted Text:</del> Outdated methodologies like <del>Flash animations</del> have been replaced by standard HTML5.</li>
+                    <li><sub>Subscript:</sub> Standard chemical formula for hydration: H<sub>2</sub>O.</li>
+                    <li><sup>Superscript:</sup> Quadratic formula variable scaling: E = mc<sup>2</sup>.</li>
+                </ul>
+            </div>
+
+            <blockquote>
+                "Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination."
+                <br><strong>— Earl Long</strong>
+            </blockquote>
+        </section>
+
+        <!-- 2. Image Demonstration -->
+        <section id="profile-image">
+            <h2>2. 🖼️ Image Element</h2>
+            <p>Below is a featured image with explicitly defined dimensions and alternative descriptive text.</p>
+            <div class="media-container">
+                <img src="https://picsum.photos/300/300" alt="Alex Mercer Profile Image" width="300" height="300">
+            </div>
+        </section>
+
+        <!-- 3. Audio Demonstration -->
+        <section id="audio-player">
+            <h2>3. 🎵 HTML5 Audio</h2>
+            <p>Listen to a sample audio track showcasing the HTML5 <code>&lt;audio&gt;</code> element with fallback sources.</p>
+            <div class="media-container">
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_OOG_1MG.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- 4. Video Demonstration -->
+        <section id="video-player">
+            <h2>4. 🎬 HTML5 Video</h2>
+            <p>Below is a video player utilizing posters and multiple video format fallbacks.</p>
+            <div class="media-container">
+                <video controls poster="https://picsum.photos/500/300" width="500">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.webm" type="video/webm">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>
+
+        <!-- 5. Advanced Embedding -->
+        <section id="advanced-embedding">
+            <h2>5. 📄 Advanced Content Embedding</h2>
+
+            <h3>A. Document Embedding using &lt;object&gt;</h3>
+            <p>Embedding a public sample PDF document directly into the webpage:</p>
+            <div class="media-container">
+                <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="100%" height="400">
+                    <p>It appears your browser does not support embedded PDFs. You can <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">download the PDF file instead</a>.</p>
+                </object>
+            </div>
+
+            <h3>B. Media / Vector Embedding using &lt;embed&gt;</h3>
+            <p>Embedding an SVG graphic directly using the <code>&lt;embed&gt;</code> element:</p>
+            <div class="media-container">
+                <embed src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" type="image/svg+xml" width="300" height="200">
+            </div>
+
+            <h3>C. External Webpage Embedding using &lt;iframe&gt;</h3>
+            <p>Embedding external web content inside an inline frame:</p>
+            <div class="media-container">
+                <iframe src="https://example.com" width="100%" height="300" title="Example External Webpage" style="border: 1px solid var(--border-color);">
+                    <p>Your browser does not support iframe content.</p>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alex Mercer | Personal Portfolio & HTML5 Media Showcase</p>
+    </footer>
+
+</body>
 </html>
